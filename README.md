@@ -23,7 +23,7 @@ To get started simply clone this repository and install dependencies.
 
 Clone the `Block-Art` repository using git: 
 ```
-git clone 
+git clone https://github.com/khonflict/Block-Art.git
 cd Block-Art
 ```
 
