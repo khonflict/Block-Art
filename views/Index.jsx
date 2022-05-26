@@ -5,26 +5,19 @@ class Index extends React.Component {
     render() { 
         const { arts } = this.props
         return (
-            <DefaultLayout title="INDEX">
+            <DefaultLayout title="Collection">
             <div>
-                <nav>
-                    <a href="/arts/new">Create New Listing</a>
-                </nav>
-               
+                
                 <ul>
                     {
                         arts.map(art => {
                             console.log(art)
                             return (
                                 <li key={art._id}>
-                                    <p><a href={`/arts/${art._id}`}>{art.name}</a> is available for purchase. The price is {art.price}.</p>
+                                    <p><a href={`/arts/${art._id}`}>{art.name}</a> is a one of a kind piece available for purchase. Clink on the link for detailed information.</p>
         
-                                    <form action={`/arts/${art._id}?_method=DELETE`}method='POST'>
-                                        <input type="submit" value = 'DELETE' />
-                                    </form>
-                                    <button><a href={`/arts/${art._id}/edit`}>{`Edit ${art.name}`}</a></button>
+                                    <button><a href={`/arts/${art._id}`}>{`About ${art.name}`}</a></button>
 
-                                    
                                 </li>
                             )
                         })

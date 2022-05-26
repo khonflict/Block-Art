@@ -1,7 +1,19 @@
 body {
+    
     background-image: url('https://images.unsplash.com/photo-1605999081451-4436bf1d0d88?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFydCUyMGdhbGxlcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500');
-   
-   
+    
 }
 
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    font-size: large; 
+    text-align: center;
+    height: 60px;
+}
 
+/* Logo not showing up */
+/* .logo-image {
+    height: 40px;
+} */

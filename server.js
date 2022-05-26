@@ -1,30 +1,30 @@
-require('dotenv').config()
 const express = require('express')
 const {connect, connection} = require('mongoose')
 const method = require('method-override')
 const Art = require('./models/Art')
 const app = express()
 const PORT = process.env.PORT || 3000
+require('dotenv').config()
 
-
-// Database Connection //
+// === Database Connection === //
 connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
 connection.once('open', () => console.log('Connected to Mongo'))
 
-// Engine Setup //
+// === Engine Setup === //
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
 
-// Middleware //
+// === Middleware === //
 app.use(method('_method'))
 app.use(express.urlencoded({extended:false}));
 app.use(express.static('public'))
 app.use(express.json())
 
-// Routes //
+// === Routes === //
+
 // Index //
 app.get('/arts', (req, res) => {
     Art.find({}, (err, allArts) => {
