@@ -11,18 +11,31 @@ class DefaultLayout extends React.Component {
                 </head>
 
                 <nav>
+                    
                     {/* Logo not showing up */}
-                    {/* <a class="navbar-brand" href="/">
-                        <div className="logo-image">
+                    {/* <a class="navbar-brand" href="">
+                        <div class="logo-image">
                         <img src="images/BlockArtLogo.png" alt="" />
                         </div>
                     </a>   */}
+                    
+                    {/* Got image to show but not logo itsels */}
+                   {/* <ul class="nav">
+                    <li><img src="images/BlockArtLogo.png" id="logo"/> </li>  
+                    <li><a href="/arts/">COLLECTION</a></li>
+                    <li><a href="/arts/new">CREATE NEW LISTING</a></li>
+                    
+                    </ul>  */}
 
-                    <a href="/arts/">Collection</a>
-                    <a href="/arts/new">Create New Listing</a>
-                    {/* Add shopping cart/image */}
+                    <a class="navbar-brand" href="#">
+                        <img id="logo" src="/images/BlockArtLogo.png"/>
+                    </a>
+                    <a href="/arts/">COLLECTION</a>
+                    <a href="/arts/new">CREATE LISTING</a>
+                 
                 </nav>
                 <body>
+                    <div class="Cart-Container"></div>
                     <h1>{this.props.title}</h1> 
                     {this.props.children}  
                 </body>

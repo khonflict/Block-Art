@@ -2,6 +2,7 @@ const express = require('express')
 const {connect, connection} = require('mongoose')
 const method = require('method-override')
 const Art = require('./models/Art')
+const Cart = require('./models/Cart')
 const app = express()
 const PORT = process.env.PORT || 3000
 require('dotenv').config()
@@ -91,6 +92,20 @@ app.get('/arts/:id', (req, res) => {
        }
         
     }) 
+})
+
+// === Shopping Cart === //
+app.get('/cart', (req, res) => {
+    Cart.find({}, (err, addToCart) => {
+        res.render('Shopping', {arts:addToCart})
+    })
+
+})
+
+app.post('/cart', (req, res) => {
+    Cart.create([req.body], (err, addToCart) => {
+        res.render('Shopping', {arts:addToCart})
+    })
 })
 
 

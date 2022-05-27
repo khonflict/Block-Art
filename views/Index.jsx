@@ -7,14 +7,18 @@ class Index extends React.Component {
         return (
             <DefaultLayout title="Collection">
             <div>
-                
                 <ul>
                     {
                         arts.map(art => {
                             console.log(art)
                             return (
                                 <li key={art._id}>
-                                    <p><a href={`/arts/${art._id}`}>{art.name}</a> is a one of a kind piece available for purchase. Clink on the link for detailed information.</p>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <img id="imgIndex" src={`/images/${art.image}`} alt="" />
+                                    <br />
+                                    <p><a href={`/arts/${art._id}`}>{art.name}</a> is a one of a kind piece available for purchase. Clink below to learn more!</p>
         
                                     <button><a href={`/arts/${art._id}`}>{`About ${art.name}`}</a></button>
 
