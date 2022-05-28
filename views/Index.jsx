@@ -5,7 +5,7 @@ class Index extends React.Component {
     render() { 
         const { arts } = this.props
         return (
-            <DefaultLayout title='Collection'>
+            <DefaultLayout>
                 <div class="indexBox">
                     <ul>
                         {
@@ -18,7 +18,8 @@ class Index extends React.Component {
                                     <br />
                                     <img id="imgIndex" src={`/images/${art.image}`} alt="" />
                                     <br />
-                                    <p><a href={`/arts/${art._id}`}>{art.name}</a> is a one of a kind piece that will stimulate countless conversations. Clink below to learn more!</p>
+                                    <br />
+                                    <p><a href={`/arts/${art._id}`}>{art.name}</a> is a one of a kind NFT that will stimulate countless conversations. Clink below to learn more!</p>
                                     <br />
                                     <button><a href={`/arts/${art._id}`}>{`About ${art.name}`}</a></button>
                                 </li>

@@ -4,8 +4,15 @@ const DefaultLayout = require('./layout/DefaultLayout')
 module.exports = class New extends React.Component {
     render() {
         return (
-            <DefaultLayout title='Create New Listing'>
+            <DefaultLayout>
+                <br />
+                <br />
+                <br />
                 <div class="containerBox">
+                <br />
+                <h2>Create New Listing</h2>
+                <br />
+                <br />
                 <br />
                <form action="/arts" method="POST">
                     <label htmlFor="image">Image:</label>
@@ -19,21 +26,13 @@ module.exports = class New extends React.Component {
                     <input type="text" id="price" name="price" />
                     <br />
                     <br />
-                    <input type="submit" value="Create Listing" />
+                    <input class="createListing" type="submit" value="Create Listing" />
                     <br />
                     <br />
                     <button><a href={'/arts'}>Return to Collection</a></button>
                 </form>
                 </div>
-                
-                    
-                
-
-               
-                
-            </DefaultLayout>
-            
-           
+            </DefaultLayout>  
         )
     }
 }

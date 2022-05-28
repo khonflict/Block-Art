@@ -6,12 +6,20 @@ module.exports = class Edit extends React.Component {
     render() {
         const art = this.props.art
         return (
-            <DefaultLayout title="Edit Listing">
-               <div class="containerBox">
-               <form action={`/arts/${art._id}?_method=PUT`} 
+            <DefaultLayout>
+                <br />
+                <br />
+                <br />
+                <div class="containerBox">
+                <br />
+                <h2>Edit Listing</h2>   
+                <br />
+                <br /> 
+                <br />
+                <form action={`/arts/${art._id}?_method=PUT`} 
                     method = "POST">
                     <label htmlFor="image">Image:</label>
-                    <input type="file" id="image" name="image" />
+                    <input type="file" id="image" name="image" defaultValue={art.image} />
                     <br />
                     <label htmlFor="name">Name:</label>
                     <input type ="text" id="name" name="name" defaultValue={art.name}/>
@@ -20,16 +28,13 @@ module.exports = class Edit extends React.Component {
                     <input type ="text" id="price" name="price" defaultValue={art.price}/>
                     <br />
                     <br />
-                    <input type="submit" value="Edit Listing"/>
+                    <input class="createListing" type="submit" value="Edit Listing"/>
                     <br />
                     <br />
                     <button><a href={'/arts'}>Return to Collection</a></button>
                 </form>
 
                </div>
-                
-               
-               
             </DefaultLayout>
         )
     }
