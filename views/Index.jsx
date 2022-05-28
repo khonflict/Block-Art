@@ -5,11 +5,11 @@ class Index extends React.Component {
     render() { 
         const { arts } = this.props
         return (
-            <DefaultLayout title="Collection">
-            <div>
-                <ul>
-                    {
-                        arts.map(art => {
+            <DefaultLayout title='Collection'>
+                <div class="indexBox">
+                    <ul>
+                        {
+                            arts.map(art => {
                             console.log(art)
                             return (
                                 <li key={art._id}>
@@ -18,23 +18,18 @@ class Index extends React.Component {
                                     <br />
                                     <img id="imgIndex" src={`/images/${art.image}`} alt="" />
                                     <br />
-                                    <p><a href={`/arts/${art._id}`}>{art.name}</a> is a one of a kind piece available for purchase. Clink below to learn more!</p>
-        
+                                    <p><a href={`/arts/${art._id}`}>{art.name}</a> is a one of a kind piece that will stimulate countless conversations. Clink below to learn more!</p>
+                                    <br />
                                     <button><a href={`/arts/${art._id}`}>{`About ${art.name}`}</a></button>
-
                                 </li>
                             )
                         })
                     }
-                </ul>
-            </div>
-            </DefaultLayout>
-            
+                    </ul>
+                </div>
+              </DefaultLayout> 
         )
     }
 }
-
+            
 module.exports = Index
-
-
-

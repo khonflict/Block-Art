@@ -7,43 +7,30 @@ class DefaultLayout extends React.Component {
             <html lang='en'>
                 <head>
                     <title>{this.props.title}</title>
+                    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'></link>
+                    <link href="http://fonts.cdnfonts.com/css/mont" rel="stylesheet"></link>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                     <link rel="stylesheet" href="/CSS/styles.css" />
                 </head>
 
                 <nav>
-                    
-                    {/* Logo not showing up */}
-                    {/* <a class="navbar-brand" href="">
-                        <div class="logo-image">
-                        <img src="images/BlockArtLogo.png" alt="" />
-                        </div>
-                    </a>   */}
-                    
-                    {/* Got image to show but not logo itsels */}
-                   {/* <ul class="nav">
-                    <li><img src="images/BlockArtLogo.png" id="logo"/> </li>  
-                    <li><a href="/arts/">COLLECTION</a></li>
-                    <li><a href="/arts/new">CREATE NEW LISTING</a></li>
-                    
-                    </ul>  */}
-
                     <a class="navbar-brand" href="#">
                         <img id="logo" src="/images/BlockArtLogo.png"/>
                     </a>
                     <a href="/arts/">COLLECTION</a>
+                    {/* <a href="">ABOUT US</a> */}
                     <a href="/arts/new">CREATE LISTING</a>
-                 
+                    <a href="/cart/">CART <i class="fa fa-shopping-cart"></i></a>
                 </nav>
+                
                 <body>
-                    <div class="Cart-Container"></div>
-                    <h1>{this.props.title}</h1> 
+                    <h2>{this.props.title}</h2> 
                     {this.props.children}  
                 </body>
         
             </html>
         )
-    }
-        
+    }   
 }
 
 module.exports = DefaultLayout

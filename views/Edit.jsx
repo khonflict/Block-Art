@@ -7,9 +7,12 @@ module.exports = class Edit extends React.Component {
         const art = this.props.art
         return (
             <DefaultLayout title="Edit Listing">
-              
-                <form action={`/arts/${art._id}?_method=PUT`} 
+               <div class="containerBox">
+               <form action={`/arts/${art._id}?_method=PUT`} 
                     method = "POST">
+                    <label htmlFor="image">Image:</label>
+                    <input type="file" id="image" name="image" />
+                    <br />
                     <label htmlFor="name">Name:</label>
                     <input type ="text" id="name" name="name" defaultValue={art.name}/>
                     <br />
@@ -18,8 +21,14 @@ module.exports = class Edit extends React.Component {
                     <br />
                     <br />
                     <input type="submit" value="Edit Listing"/>
+                    <br />
+                    <br />
+                    <button><a href={'/arts'}>Return to Collection</a></button>
                 </form>
-                <button><a href={'/arts'}>Back</a></button>
+
+               </div>
+                
+               
                
             </DefaultLayout>
         )

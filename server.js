@@ -95,18 +95,44 @@ app.get('/arts/:id', (req, res) => {
 })
 
 // === Shopping Cart === //
-app.get('/cart', (req, res) => {
-    Cart.find({}, (err, addToCart) => {
-        res.render('Shopping', {arts:addToCart})
+app.get('/arts/:id/cart', (req, res) => {
+    Cart.find({}, (err, foundArts) => {
+        res.render('Shopping', {arts: foundArts})
     })
 
 })
+// app.get('/arts/:id/cart', (req, res) => {
+//     Cart.find({}, (err, allArts) => {
+//         res.render('Shopping', {arts:allArts})
+//     })
 
-app.post('/cart', (req, res) => {
+// })
+
+app.put('arts/:id/cart', async (req, res) => {
     Cart.create([req.body], (err, addToCart) => {
         res.render('Shopping', {arts:addToCart})
     })
 })
 
+// app.put('/arts/:id/cart',async (req, res)=> {
+//     const shopCart = await Cart.findById('62912f0fb18a385fec8fe1ce')
+//     const item = await Product.findById(req.body.arts)
+//     shopCart.arts.push(item)
+//     console.log(item,'item')
+//     console.log(shopCart.arts,'shop')
 
+// Cart.findByIdAndUpdate('62912f0fb18a385fec8fe1ce',{
+//     arts:shopCart.arts
+//     },{new:true},(err,updatedCart)=>{
+//         // shopCart.save()
+//         res.redirect('/arts/62912f0fb18a385fec8fe1ce/cart')
+//     })
+
+// app.post('/arts/62912f0fb18a385fec8fe1ce/cart',(req,res)=>{
+//     Cart.create(req.body,(err,addToCart)=>{
+
+// res.redirect('/arts/62912f0fb18a385fec8fe1ce/cart')
+//  })
+// })
+    
 app.listen(PORT, () => console.log(`Listening to port ${PORT}`))
