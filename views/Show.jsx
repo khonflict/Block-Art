@@ -12,9 +12,9 @@ class Show extends React.Component {
                     <br />
                     <br />
                     <br />
-                    <p>{art.name} is a vibrant piece that will sure to spark conversatons. This one of a kind design will look great in any space! The price is {art.price}.</p>
+                    <p>{art.name} is a vibrant piece that will sure to spark conversatons. {art.description} This one of a kind design will look great in any space! The price is {art.price}.</p>
                     <br />
-                    <button><a href={'/Cart'}>Purchase Now</a></button>
+                    <button><a href={'/Shopping'}>Add to Cart</a></button>
                     <br />
                     <br />
                     <button><a href={'/arts'}>Back to Collection</a></button>

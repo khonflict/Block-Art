@@ -18,11 +18,14 @@ module.exports = class Edit extends React.Component {
                 <br />
                 <form action={`/arts/${art._id}?_method=PUT`} 
                     method = "POST">
-                    <label htmlFor="image">Image:</label>
+                    <label class="fileInput" htmlFor="image">Image:</label>
                     <input type="file" id="image" name="image" defaultValue={art.image} />
                     <br />
                     <label htmlFor="name">Name:</label>
                     <input type ="text" id="name" name="name" defaultValue={art.name}/>
+                    <br />
+                    <label htmlFor="description">Description:</label>
+                    <input type="text" id="description" name="description" defaultValue={art.description}/>
                     <br />
                     <label htmlFor="price">Price:</label>
                     <input type ="text" id="price" name="price" defaultValue={art.price}/>

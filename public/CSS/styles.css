@@ -4,16 +4,6 @@
     font-family: 'Allerta Stencil';
 }
 
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: whitesmoke;
-    font-size: large; 
-    height: 200px;
-    line-height: 200px;
-    width: 100vw;
-}
-
 body {    
     height: 100vh;
     width: 100vw;
@@ -37,6 +27,16 @@ button {
     font-size: medium;
 }
 
+#nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    font-size: large; 
+    height: 200px;
+    line-height: 200px;
+    width: 100vw;
+}
+
 .indexBox {
     /* display: grid;
     grid-template-columns: 2;
@@ -55,17 +55,31 @@ button {
 .containerBox {
     border: 20px solid whitesmoke;
     background-color: whitesmoke;
-    opacity: 90%;
+    opacity: 95%;
     text-align: center;
     align-content: center;
     width: 50%;
     height: 50%;
     margin: auto;
-    vertical-align: middle;
+}
+
+.cartContainer {
+    border: 20px solid whitesmoke;
+    background-color: whitesmoke;
+    opacity: 95%;
+    text-align: center;
+    align-content: center;
+    width: 50%;
+    height: 50%;
+    margin: auto;
 }
 
 .createListing {
     font-size: medium;
+}
+
+.fileInput {
+    text-align: right;
 }
 
 #logo {

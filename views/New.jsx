@@ -14,13 +14,16 @@ module.exports = class New extends React.Component {
                 <br />
                 <br />
                 <br />
-               <form action="/arts" method="POST">
-                    <label htmlFor="image">Image:</label>
+                <form action="/arts" method="POST">
+                    <label class="fileInput" htmlFor="image">Image:</label>
                     <input type="file" id="image" name="image"/>
                     <br />
                     
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" name="name" />
+                    <br />
+                    <label htmlFor="description">Description:</label>
+                    <input type="text" id="description" name="description" />
                     <br />
                     <label htmlFor="price">Price:</label>
                     <input type="text" id="price" name="price" />

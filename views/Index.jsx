@@ -19,7 +19,7 @@ class Index extends React.Component {
                                     <img id="imgIndex" src={`/images/${art.image}`} alt="" />
                                     <br />
                                     <br />
-                                    <p><a href={`/arts/${art._id}`}>{art.name}</a> is a one of a kind NFT that will stimulate countless conversations. Clink below to learn more!</p>
+                                    <p><a href={`/arts/${art._id}`}>{art.name}</a> is a one of a kind NFT. Clink below to learn more!</p>
                                     <br />
                                     <button><a href={`/arts/${art._id}`}>{`About ${art.name}`}</a></button>
                                 </li>
