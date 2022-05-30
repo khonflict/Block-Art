@@ -15,19 +15,21 @@ class DefaultLayout extends React.Component {
 
                 <nav>
                     <ul id="nav">
-                        <li><a class="navbar-brand" href="#">
+                        <li><a class="navbar-brand" href="/about/">
                         <img id="logo" src="/images/BlockArtLogo.png"/>
                         </a></li>
                         <li><a href="/arts/">COLLECTION</a></li>
                         <li><a href="/about/">ABOUT US</a></li>
                         <li><a href="/arts/new">CREATE LISTING</a></li>
-                        <li><a href="/shopping/">CART <i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href="/arts/checkout/">CART <i class="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </nav>
                 
                 <body>
+                    <div class="bodyBox">
                     <h2>{this.props.title}</h2> 
-                    {this.props.children}  
+                    {this.props.children}
+                    </div>
                 </body>
         
             </html>

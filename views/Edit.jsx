@@ -21,6 +21,7 @@ module.exports = class Edit extends React.Component {
                     <label class="fileInput" htmlFor="image">Image:</label>
                     <input type="file" id="image" name="image" defaultValue={art.image} />
                     <br />
+                    <br />
                     <label htmlFor="name">Name:</label>
                     <input type ="text" id="name" name="name" defaultValue={art.name}/>
                     <br />
@@ -34,7 +35,9 @@ module.exports = class Edit extends React.Component {
                     <input class="createListing" type="submit" value="Edit Listing"/>
                     <br />
                     <br />
-                    <button><a href={'/arts'}>Return to Collection</a></button>
+                    <button><a href={'/arts'}>Back to Collection</a></button>
+                    <br />
+                    <br />
                 </form>
 
                </div>
