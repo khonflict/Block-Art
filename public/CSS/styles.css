@@ -16,15 +16,24 @@ ul {
 
 p {
     padding: 10px;
-    border: 2px solid lightgray;
+    border: 15px solid #5ce1e6;
     background-color: whitesmoke;
     margin: auto;
     width: 50%;
 }
 
-button {
+a{
     text-decoration: none;
+}
+
+button {
     font-size: medium;
+    width: 10em;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
 }
 
 #nav {
@@ -76,6 +85,8 @@ button {
 
 .createListing {
     font-size: medium;
+    width: 10em;
+    color: rgb(87, 4, 114);
 }
 
 .fileInput {
@@ -93,6 +104,11 @@ button {
     border: 60px solid whitesmoke;
 }
 
+#indexTitle {
+    width: 300px;
+    border-color: lightgrey;
+}
+
 #imgShow {
     height: 400px;
     width: 300px;
@@ -104,7 +120,30 @@ button {
     transition: 1s ease;
 }
 
-#delete {
-    font-size: medium;
+#textShow {
+    border-color: lightgray;
+    width: 500px;
 }
 
+#delete {
+    font-size: medium;
+    width: 10em;
+    color: rgb(87, 4, 114);
+}
+
+/* Cart */
+/* .row {
+    display: flex;
+    justify-content: space-between;
+}
+.col-1 {
+    flex: 1;
+}
+
+.col-2 {
+    flex: 2;
+}
+
+.block {
+
+} */
