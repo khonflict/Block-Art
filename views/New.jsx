@@ -13,7 +13,7 @@ module.exports = class New extends React.Component {
                 <h2>Create New Listing</h2>
                 <br />
                 <br />
-                <br />
+               
                 <form action="/arts" method="POST">
                     <label class="fileInput" htmlFor="image">Image:</label>
                     <input type="file" id="image" name="image"/>
@@ -30,7 +30,6 @@ module.exports = class New extends React.Component {
                     <br />
                     <br />
                     <input class="createListing" type="submit" value="Create Listing" />
-                    <br />
                     <br />
                     <button><a href={'/arts'}>Back to Collection</a></button>
                     <br />

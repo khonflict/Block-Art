@@ -34,12 +34,10 @@ module.exports = class Edit extends React.Component {
                     <br />
                     <input class="createListing" type="submit" value="Edit Listing"/>
                     <br />
-                    <br />
                     <button><a href={'/arts'}>Back to Collection</a></button>
                     <br />
                     <br />
                 </form>
-
                </div>
             </DefaultLayout>
         )
