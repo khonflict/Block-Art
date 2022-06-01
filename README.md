@@ -1,13 +1,18 @@
 # Block-Art
-<<<<<<< HEAD
-Welcome to Block Art! We offer the most exclusive NFTs. This E-commerce website demonstrates MERN stack applications. Users are able to select an item and get more information on the listing in addition to making changes such as adding, editing, or delete listings.
-
-=======
 Welcome to Block Art! We offer the most exclusive NFTs from global talent. This E-commerce website demonstrates MERN stack applications. Users are able to select an item and get more information on the listing in addition to making changes such as adding, editing, or delete listings.
 
 # Wireframe
-![wireframe](https://github.com/github/khonflict/Block-Art/public/images/blockArtWireframe.png)
->>>>>>> 1701575555af052efeb1b453f754929ce44f73fa
+![wireframe](https://github.com/khonflict/Block-Art/blob/main/public/images/blockArtWireframe.png)
+
+# Site Images
+Home Page
+
+![wireframe](https://github.com/khonflict/Block-Art/blob/main/public/images/blockArtSiteImage1.png)
+
+About Us Page
+
+![wireframe](https://github.com/khonflict/Block-Art/blob/main/public/images/blockArtSiteImage2.png)
+
 
 # Routes
 
