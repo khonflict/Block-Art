@@ -41,31 +41,6 @@ label {
     margin-bottom: 10px;
 }
 
-#nav {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: whitesmoke;
-    font-size: large; 
-    height: 200px;
-    line-height: 200px;
-    width: 100vw;
-}
-
-.indexBox {
-    /* display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2; */
-    padding-bottom: 100px;
-    text-align: center;
-    align-content: center;
-}
-
-.showBox {
-    padding: 50px;
-    text-align: center;
-    align-content: center;
-}
-
 .containerBox {
     border: 20px solid whitesmoke;
     background-color: whitesmoke;
@@ -77,31 +52,27 @@ label {
     margin: auto;
 }
 
-.cartContainer {
-    border: 20px solid whitesmoke;
+#nav {
+    display: flex;
+    justify-content: space-evenly;
     background-color: whitesmoke;
-    opacity: 95%;
-    text-align: center;
-    align-content: center;
-    width: 50%;
-    height: 50%;
-    margin: auto;
-}
-
-.createListing {
-    font-size: medium;
-    width: 10em;
-    color: rgb(87, 4, 114);
-    margin-bottom: 10px;
-}
-
-.fileInput {
-    text-align: right;
+    font-size: large; 
+    height: 200px;
+    line-height: 200px;
+    width: 100vw;
 }
 
 #logo {
     position: relative;
     top: -150px; left: -50px;
+}
+
+/* === Index === */
+
+.indexBox {
+    padding-bottom: 100px;
+    text-align: center;
+    align-content: center;
 }
 
 #imgIndex {
@@ -113,6 +84,29 @@ label {
 #indexTitle {
     width: 300px;
     border-color: lightgrey;
+}
+
+/* === New === */
+
+.fileInput {
+    text-align: right;
+}
+
+/* === Edit === */
+
+.createListing {
+    font-size: medium;
+    width: 10em;
+    color: rgb(87, 4, 114);
+    margin-bottom: 10px;
+}
+
+/* === Show === */
+
+.showBox {
+    padding: 50px;
+    text-align: center;
+    align-content: center;
 }
 
 #imgShow {
@@ -137,19 +131,16 @@ label {
     color: rgb(87, 4, 114);
 }
 
-/* Cart */
-/* .row {
-    display: flex;
-    justify-content: space-between;
-}
-.col-1 {
-    flex: 1;
+/* === Cart === */
+.cartContainer {
+    border: 20px solid whitesmoke;
+    background-color: whitesmoke;
+    opacity: 95%;
+    text-align: center;
+    align-content: center;
+    width: 50%;
+    height: 50%;
+    margin: auto;
 }
 
-.col-2 {
-    flex: 2;
-}
 
-.block {
-
-} */

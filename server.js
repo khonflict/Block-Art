@@ -105,28 +105,6 @@ app.get('/arts/:id/checkout/', (req, res) => {
     res.render('Checkout')
 })
 
-
-
-// app.put('/arts/:id/cart', async (req, res) => {
-//     const shopCart = await Cart.findById('62913301b18a385fec8fe1d9')
-//     const item = await Art.findById(req.body.arts)
-//     shopCart.arts.push(item)
-//     console.log(item,'item')
-//     console.log(shopCart.arts,'shop')
-// })
-
-// Cart.findByIdAndUpdate('62913301b18a385fec8fe1d9',{
-//     arts:shopCart.arts
-//     },{new:true},(err,updatedCart)=>{
-//         res.redirect('/arts/cart')
-//     })
-
-// app.post('/arts/:id/cart',(req,res)=>{
-//     Cart.create(req.body,(err,addToCart)=>{
-//     res.redirect('/arts/cart')
-//  })
-// })
-
 app.listen(PORT, () => {
     console.log(`Listening to port ${PORT}`)
 })
