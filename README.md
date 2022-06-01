@@ -1,9 +1,6 @@
 # Block-Art
 Welcome to Block Art! We offer the most exclusive NFTs. This E-commerce website demonstrates MERN stack applications. Users are able to select an item and get more information on the listing in addition to making changes such as adding, editing, or delete listings.
 
-# Live Demo
-
-# Wireframe
 
 # Routes
 
