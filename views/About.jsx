@@ -15,7 +15,7 @@ class About extends React.Component {
                 <h2>About Us</h2>
                 <br />
                 <br />
-                <p>Block Art sources and curates exclusive NFTs from up and coming artists from all over the world. Our collections are designed to delight your senses. Explore the possibilities!</p>
+                <p>Block Art sources and curates exclusive NFTs from up and coming artists from all over the world. Our collection is designed to delight your senses. Explore the possibilities!</p>
                 <br />
                 <br />
                 <button><a href={'/arts'}>View Collection</a></button>
